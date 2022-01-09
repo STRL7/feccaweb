@@ -20,5 +20,6 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
-!wp-content/themes/feccawp/
 !wp-content/plugins/
+!wp-content/themes/
+!wp-content/themes/feccawp/

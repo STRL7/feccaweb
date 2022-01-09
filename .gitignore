@@ -1,7 +1,6 @@
 wp-admin/*
 wp-content/*
 wp-content/themes/*
-wp-content/themes/twentynineteen
 wp-includes/*
 .htaccess
 README.md
@@ -23,4 +22,5 @@ wp-signup.php
 wp-trackback.php
 xmlrpc.php
 !wp-content/plugins/
+!wp-content/themes/
 !wp-content/themes/feccawp/

@@ -1,5 +1,6 @@
 wp-admin/*
 wp-content/*
+wp-content/theme/*
 wp-includes/*
 .htaccess
 README.md

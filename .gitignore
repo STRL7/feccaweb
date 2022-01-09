@@ -1,6 +1,7 @@
 wp-admin/*
 wp-content/*
 wp-content/themes/*
+wp-content/themes/twentynineteen
 wp-includes/*
 .htaccess
 README.md

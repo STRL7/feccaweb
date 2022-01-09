@@ -1,5 +1,5 @@
 wp-admin/*
-wp-content/*
+wp-content
 wp-includes/*
 .htaccess
 README.md
@@ -20,5 +20,5 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
-!wp-content/themes/feccawp
-!wp-content/plugins
+!wp-content/themes/feccawp/
+!wp-content/plugins/

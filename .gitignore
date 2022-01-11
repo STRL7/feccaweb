@@ -1,0 +1,8 @@
+/*
+wp-content/*
+wp-content/themes/*
+!.gitignore
+!wp-content/
+!wp-content/plugins/
+!wp-content/themes/
+!wp-content/themes/feccawp/

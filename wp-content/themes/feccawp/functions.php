@@ -233,7 +233,7 @@ function my_nav_menu( $args ) {
                 $drop = ' drop';
             } 
             elseif ($depth == 0 && $args->walker->has_children) {           // если глубина 0 и есть дочерние элементы, контейнеру добавляется класс main_drop
-                $drop = ' nav-item ';
+                $drop = ' nav-item';
                 $url_icon .= get_template_directory_uri() . '/img/nav-arrow.svg">';     // определение локального урл стрелки главного меню
                 $arrow .= '<img class="nav-menu-icon svg" src="' . $url_icon;                        // формирование блока картинки стрелки
             }

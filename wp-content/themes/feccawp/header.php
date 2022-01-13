@@ -32,21 +32,23 @@
         <div class="bg-head-blue mb-625" style="background-color: #44A0FF;">
             <div class="container">
                 <div class="d-flex flex-wrap justify-content-center margin-header">
-                    <div class="d-flex align-items-center col-md-4 col-4 mb-4 mb-md-0 me-md-auto logo-container">
+                    <div class="d-flex align-items-center col-md-4 col-4 mb-4 mb-md-0 logo-container">
                         <a href="/" class="text-dark text-decoration-none">
                             <img src="<?php the_field("logo"); ?>" alt="logo">
                         </a>
                         <span class="header-text"><?php the_field("Tagline"); ?></span>
                     </div>
-                    <div class="col-md-8 col-12 row d-flex justify-content-end nav-list-container">                   
-                            <?
-                            my_nav_menu( [ 'theme_location'  => '' ] );
-                            ?>
-                            <!--<li class="nav-item btn btn-outline-secondary btn-lg px-4"><a href="#" class="nav-link">Get Started</a>-->
-                            <div class="nav-item nav-item-b col-3 d-flex justify-content-end align-items-center">
-                                <button type="button" class="btn btn-outline-secondary btn-lg px-4"><a href="#" class="text-decoration-none btn-link-style"><?php the_field("button_header"); ?></a></button>
-                            </div>
+                    <div class="menu-burger__header">
+                        <span></span>
                     </div>
+                    <nav class="header__nav col-md-8 col-12 row justify-content-end nav-list-container">
+                        <?
+                        my_nav_menu( [ 'theme_location'  => '' ] );
+                        ?>
+                        <div class="nav-item nav-item-b col-3 d-flex justify-content-end align-items-center">
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4"><a href="#" class="text-decoration-none btn-link-style"><?php the_field("button_header"); ?></a></button>
+                        </div>
+                    </nav>
                 </div>
                 <div class="col-lg-6 col-md-8 mx-auto margin-bot">
                     <h1 class="fw-ligh h1-style"><?php the_field("general_title"); ?></h1>

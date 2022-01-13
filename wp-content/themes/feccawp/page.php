@@ -91,11 +91,11 @@ get_header();
     </div>
     <div class="mb-625">
         <div class="container content-container">
-            <div class="pricing-header mx-auto text-center">
+            <div class="pricing-header col-11 mx-auto text-center">
                 <h2 class="display-4 h2-style"><?php the_field("content_title"); ?></h2>
             </div>
             <div class="row justify-content-center features-wrap features-my-justy">
-                <div class="col-md-4 col-sm-12 col-md text-right">
+                <div class="col-md-12 col-lg-4 col-sm-12 col-md text-right">
                     <ul class="list-unstyled text-small">
 
                         <?php
@@ -141,12 +141,12 @@ get_header();
                         
                     </ul>
                 </div>
-                <div class="col-md-4 col-sm-12 col-md">
+                <div class="col-md-12 col-lg-4 col-sm-12 col-md">
                     <ul class="list-unstyled text-small">
                         <li><img class="iphone" src="<?php the_field("content_img"); ?>" alt=""></li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-sm-12 col-md text-left">
+                <div class="col-md-12 col-lg-4 col-sm-12 col-md text-left">
                     <ul class="list-unstyled text-small">
 
                     <?php
@@ -218,7 +218,7 @@ get_header();
                                              while ( have_rows('testimonials_repiter') ) : the_row(); ?>
                                             <div class="swiper-slide">
                                                 <div class="flipper text-small ul-null my-flipper-adaptive">
-                                                    <div class="card">
+                                                    <div class="card card-my">
                                                         <div class="front list-body-testimonial" style="background-image: url(<?php the_sub_field('testimonials_repiter_bg'); ?>);">
                                                             <div class="position-relative">
                                                                 <img class="img-fluid" src="<?php the_sub_field('testimonials_repiter_img'); ?>" alt="portfolio">
@@ -274,13 +274,13 @@ get_header();
 
                     <div class="card-body card-body-no-padding">
                         <div class="quote-text row align-items-center mb-4">
-                            <div class="col-md-1 col-sm-1 col-2 align-self-start">
+                            <div class="col-2 col-xs-2 col-sm-1 col-md-2 col-lg-1 align-self-start">
                                 <img src="<?php echo wp_get_attachment_image_url( esc_html( $featured_post->qq ) ); ?>" alt="" />
                             </div>
-                            <h4 class="quote-testi col-md-11 col-sm-11 col-10"><?php echo esc_html( $featured_post->quote_feedback ); ?></h4>
+                            <h4 class="quote-testi col-10"><?php echo esc_html( $featured_post->quote_feedback ); ?></h4>
                         </div>
                         <div class="quote-info row align-items-center ps-5">
-                            <div class="porteit col-md-1 col-2">
+                            <div class="porteit col-2 col-xs-2 col-sm-1 col-md-2 col-lg-1">
                                 <img src="<?php echo wp_get_attachment_image_url( esc_html( $featured_post->face_feedback ) ); ?>" alt="" />
                             </div>
                             <div class="col-md-10 col-10 ps-4">
@@ -302,13 +302,13 @@ get_header();
 
                         <div class="card-body card-body-no-padding">
                             <div class="quote-text row align-items-center mb-4">
-                                <div class="col-md-1 col-sm-1 col-2 align-self-start">
+                                <div class="col-2 col-xs-2 col-sm-1 col-md-2 col-lg-1 align-self-start">
                                     <img src="<?php echo wp_get_attachment_image_url( esc_html( $featured_post->qq ) ); ?>" alt="" />
                                 </div>
-                                <h4 class="quote-testi col-md-11 col-sm-11 col-10"><?php echo esc_html( $featured_post->quote_feedback ); ?></h4>
+                                <h4 class="quote-testi col-10"><?php echo esc_html( $featured_post->quote_feedback ); ?></h4>
                             </div>
                             <div class="quote-info row align-items-center ps-5">
-                                <div class="porteit col-md-1 col-2">
+                                <div class="porteit col-2 col-xs-2 col-sm-1 col-md-2 col-lg-1">
                                     <img src="<?php echo wp_get_attachment_image_url( esc_html( $featured_post->face_feedback ) ); ?>" alt="" />
                                 </div>
                                 <div class="col-md-10 col-10 ps-4">
@@ -329,7 +329,7 @@ get_header();
                 <p class="uppercase-text"><?php the_field("faq_subtitle"); ?></p>
                 <h2 class="display-4 h2-style"><?php the_field("testimonials_title"); ?></h2>
             </div>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion col-11 mx-auto accordion-flush" id="accordionFlushExample">
             <?php   
                 if( have_rows('faq_repeater') ){
                     while ( have_rows('faq_repeater') ) : the_row(); ?>

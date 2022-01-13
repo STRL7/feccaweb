@@ -55,13 +55,15 @@ jQuery(function($){
   });
 });
 
-$(".drop").hover(function() {
+$(".drop").click(function() {
   var target = $( event.target );
 
     $(this).children('ul').toggleClass("open");
     $(this).find(".nav-menu-icon").toggleClass("rotate");
   return false;
 });
+
+
 
 
 
@@ -97,4 +99,11 @@ jQuery('img.svg').each(function(){
 
   }, 'xml');
 
+});
+
+$(document).ready(function() {
+  $('.menu-burger__header').click(function(){
+      $('.menu-burger__header').toggleClass('open-menu');
+      $('.header__nav').toggleClass('open-menu');
+  });
 });

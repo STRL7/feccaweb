@@ -101,6 +101,26 @@ jQuery('img.svg').each(function(){
 
 });
 
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 100,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    701: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  }
+});
+
 $(document).ready(function() {
   $('.menu-burger__header').click(function(){
       $('.menu-burger__header').toggleClass('open-menu');

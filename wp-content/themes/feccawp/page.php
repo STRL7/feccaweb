@@ -354,3 +354,4 @@ get_header();
 
     </div>
 </main>
+<?php wp_footer(); ?>

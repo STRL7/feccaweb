@@ -139,17 +139,24 @@ add_action( 'widgets_init', 'feccawp_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function feccawp_scripts() {
-	wp_enqueue_style( 'feccawp-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'feccawp-style', 'rtl', 'replace' );
-
-	wp_enqueue_script( 'feccawp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
 add_action( 'wp_enqueue_scripts', 'feccawp_scripts' );
+function feccawp_scripts() {
+	//wp_enqueue_style( 'feccawp-style', get_stylesheet_uri(), array(), _S_VERSION );
+	//wp_style_add_data( 'feccawp-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'google-fonts', "https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap", array(), null );
+	wp_enqueue_style( 'bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css", array(), null );
+	wp_enqueue_style( 'swiper', "https://unpkg.com/swiper/swiper-bundle.min.css", array(), null );
+	wp_enqueue_style( 'css', get_template_directory_uri() . '/css/style.css', _S_VERSION );
+	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', _S_VERSION );
+	wp_enqueue_script( 'castomizer', get_template_directory_uri() . '/js/customizer.js');
+	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/js/navigation.js');
+	wp_enqueue_script( 'script', get_template_directory_uri() .'/js/script.js');
+
+	/*if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}*/
+}
+
 
 /**
  * Implement the Custom Header feature.

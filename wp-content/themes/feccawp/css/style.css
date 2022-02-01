@@ -131,6 +131,7 @@
 .img-fluid {
     width: 100%;
     max-height: 484px;
+  	border-radius: 5px;
 }
 
 .bg {
@@ -328,6 +329,7 @@
     padding: 0 0 0 32px;
     bottom: 0px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #000000 180%);
+    border-radius: 5px;
 }
 
 .name-desc {
@@ -680,6 +682,13 @@
         z-index: 1;
     }
 
+    .dropdown, .dropdown2 {
+        width: 100%;
+        position: static;
+        background-color: #7cbbfb;
+        margin-top: 10px;
+    }
+
     .menu-burger__header {
         position: relative;
         width: 40px;
@@ -738,6 +747,7 @@
         width: 100%;
         box-shadow: 0 5px 6px rgba(36, 36, 36, 0.37);
         transition: all 0.4s ease;
+      	padding: 10px;
     }
     
     .menu-burger__header.open-menu span {
@@ -754,13 +764,29 @@
         bottom: 16px;
         transition: 0.4s;
     }
+
+    .menu-item {
+        padding: 1rem 0rem;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        text-align: center;
+    }
+    .menu-item .menu-item {
+        border: none;
+    }
+    .nav-menu-icon {
+        top: 25px;
+    }
+      .nav:last-child {
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 700px) {
     .my-flipper-adaptive {
         flex: 0 0 auto;
         width: 60%;
-        margin: 0 auto;
+        margin: 0 auto 10px auto;
     }
 
     .nav-list-container {
@@ -783,7 +809,7 @@
     .my-flipper-adaptive {
         flex: 0 0 auto;
         width: 70%;
-        margin: 0 auto;
+        margin: 0 auto 10px auto;
     }
 }
 
@@ -791,7 +817,7 @@
     .my-flipper-adaptive {
         flex: 0 0 auto;
         width: 80%;
-        margin: 0 auto;
+        margin: 0 auto 10px auto;
     }
 
     .nav-pills {
@@ -841,7 +867,7 @@
     .my-flipper-adaptive {
         flex: 0 0 auto;
         width: 100%;
-        margin: 0 auto;
+        margin: 0 auto 10px auto;
     }
 }
 

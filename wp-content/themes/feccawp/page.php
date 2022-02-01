@@ -329,7 +329,7 @@ get_header();
                 <p class="uppercase-text"><?php the_field("faq_subtitle"); ?></p>
                 <h2 class="display-4 h2-style"><?php the_field("testimonials_title"); ?></h2>
             </div>
-            <div class="accordion col-11 mx-auto accordion-flush" id="accordionFlushExample">
+            <div class="accordion col-8 mx-auto accordion-flush" id="accordionFlushExample">
             <?php   
                 if( have_rows('faq_repeater') ){
                     while ( have_rows('faq_repeater') ) : the_row(); ?>

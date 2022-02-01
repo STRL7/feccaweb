@@ -26,7 +26,7 @@
         <div class="bg-head-blue mb-625" style="background-color: #44A0FF;">
             <div class="container">
                 <div class="d-flex flex-wrap justify-content-center margin-header">
-                    <div class="d-flex align-items-center col-md-4 col-4 mb-4 mb-md-0 logo-container">
+                    <div class="d-flex align-items-center col-md-4 col-12 mb-4 mb-md-0 logo-container">
                         <a href="/" class="text-dark text-decoration-none">
                             <img src="<?php the_field("logo"); ?>" alt="logo">
                         </a>
